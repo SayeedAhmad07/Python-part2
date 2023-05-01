@@ -1,0 +1,19 @@
+student={}
+n=int(input('Enter number of students:'))
+for i in range(n):
+    l=[]
+    sno=int(input('Enter student number:'))
+    sname=input('Enter name:')
+    sgroup=input('Enter group:')
+    sbranch=input('Enter branch name:')
+    sph=int(input('Enter mobile number:'))
+    l.append(sname)
+    l.append(sgroup)
+    l.append(sbranch)
+    l.append(sph)
+    student[sno]=l
+sno=int(input('Enter student number:'))
+print('Student name:',student[sno][0])
+print('Student group:',student[sno][1])
+print('Student branch:',student[sno][2])
+print('Student mobile number:',student[sno][3])
