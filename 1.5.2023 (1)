@@ -1,0 +1,16 @@
+player={}
+n=int(input('Enter number of players:'))
+for i in range(n):
+    l=[]
+    pid=int(input('Enter player id:'))
+    pname=input('Enter player name:')
+    pmatches=int(input('number of matches played:'))
+    pruns=int(input('number of runs scored:'))
+    l.append(pname)
+    l.append(pmatches)
+    l.append(pruns)
+    player[pid]=l
+pid=int(input('Enter player id:'))
+print('player name:',player[pid][0])
+print('matches played',player[pid][1])
+print('Runs scored:',player[pid][2])
