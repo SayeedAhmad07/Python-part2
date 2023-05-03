@@ -1,0 +1,14 @@
+para=input()
+d={}
+for i in para:
+    if i==' ':
+        continue
+    if i not in d:
+        d[i]=1
+    else:
+        d[i]=d[i]+1
+r=d.values()
+k=max(r)
+for i in d:
+    if d[i]==k:
+        print(i,d[i])
